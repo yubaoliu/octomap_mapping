@@ -1,0 +1,35 @@
+* =octomap_mapping=
+
+ROS stack for mapping with OctoMap, contains the octomap\_server
+package.
+
+The =master= branch tracks the latest (stable) releases. Please send
+pull requests against the latest development branch, e.g.
+=indigo-devel=.
+
+Indigo:
+[[https://travis-ci.org/OctoMap/octomap_mapping][[[https://travis-ci.org/OctoMap/octomap_mapping.svg?branch=indigo-devel]]]]
+
+Kinetic/Melodic:
+[[https://travis-ci.org/OctoMap/octomap_mapping][[[https://travis-ci.org/OctoMap/octomap_mapping.svg?branch=kinetic-devel]]]]
+
+#+BEGIN_HTML
+  <!--- Melodic: [![Build Status](https://travis-ci.org/OctoMap/octomap_mapping.svg?branch=melodic-devel)](https://travis-ci.org/OctoMap/octomap_mapping)-->
+#+END_HTML
+
+Imported from SVN, see https://code.google.com/p/alufr-ros-pkg/ for the
+previous versions.
+
+* Use Color
+
+Add =#define COLOR_OCTOMAP_SERVER= into the =OctomapServer.h=
+
+#+begin_example
+octomap_mapping/octomap_server/include/octomap_server
+#+end_example
+
+* octomap_rviz_plugins
+#+begin_example
+git clone https://github.com/OctoMap/octomap_rviz_plugins.git
+#+end_example
+
