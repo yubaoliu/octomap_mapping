@@ -57,4 +57,5 @@ private:
 
 } // namespace
 
-PLUGINLIB_DECLARE_CLASS(octomap_server, OctomapServerNodelet, octomap_server::OctomapServerNodelet, nodelet::Nodelet);
+// PLUGINLIB_DECLARE_CLASS(octomap_server, OctomapServerNodelet, octomap_server::OctomapServerNodelet, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS( octomap_server::OctomapServerNodelet, nodelet::Nodelet);
